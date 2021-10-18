@@ -3,7 +3,7 @@ import './scss/import.scss';
 import FormChat from './js/form.js';
 import Render from './js/render.js';
 
-const ws = new WebSocket('ws://apartment-service-api.herokuapp.com/chat');
+const ws = new WebSocket('wss://apartment-service-api.herokuapp.com/chat');
 
 const formOptions = {
   formSelector: '#chatForma',
