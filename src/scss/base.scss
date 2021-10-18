@@ -1,0 +1,62 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    scroll-behavior: smooth;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(95, 93, 93);
+  }
+  
+  img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+  }
+
+  a {
+    text-decoration: none;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  
+  .container {
+    margin: 0 auto;
+    @media screen and (max-width: $mobile-bp-max) {
+      width: $mobile-w;
+    }
+    @media screen and (min-width: $tablet-bp-min) {
+      width: $tablet-w;
+    }
+    @media screen and (min-width: $desktop-bp-min) {
+      width: $desktop-w;
+    }
+  }
+  
+  .visually-hidden:not(:focus):not(:active),
+  input[type='checkbox'].visually-hidden,
+  input[type='radio'].visually-hiden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    bottom: 0px;
+    padding: 0px;
+    word-spacing: nowrap;
+    -webkit-clip-path: inset(100%);
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
